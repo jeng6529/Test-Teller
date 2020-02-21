@@ -181,6 +181,7 @@
     <Compile Include="Models\GeneralResult.cs" />
     <Compile Include="Models\TransactionRequest.cs" />
     <Compile Include="Models\TransactionResponse.cs" />
+    <Compile Include="Models\Withdrawal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -1,14 +1,20 @@
 <div class="container-fluid" style="background-color: bisque;">
   <div class="row">
     <div class="col">
-      <h2>Test Teller System</h2>
+      <h1>Teller System</h1>
       <hr>
     </div>
   </div>
   <div class="row">
-    <div class="col-2" style="background-color:darkcyan;"></div>
+    <div class="col-2 sidebar" style="background-color:darkgray;">
+      <ul style="list-style:none">
+        <li> <a [routerLink]="['/saving-account']">Saving Account</a> </li>
+        <li> <a [routerLink]="['/saving-account','deposit']">Deposit</a> </li>
+        <li> <a [routerLink]="['/saving-account','withdrawal']">Withdrawal</a> </li>
+      </ul>
+    </div>
     <div class="col-10" style="background-color: burlywood;">
-          <app-deposit></app-deposit>
+      <router-outlet></router-outlet>
     </div>
   </div>
 </div>
