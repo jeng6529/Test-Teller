@@ -16,7 +16,7 @@ export class ToolbarComponent implements OnInit {
 
   get submitDisabled$() {
     return this.toolbarService.validity$.pipe(
-      tap(validity => { console.log(`toolbar validity ${validity}`) }),
+      tap(validity => { /*console.log(`toolbar validity ${validity}`)*/ }),
       map(validity => !validity));
   }
 
